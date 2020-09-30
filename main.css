@@ -361,3 +361,353 @@ nav a {
     background-image: url(image/pagination-next.png);
     margin-right: 20px;
 }
+
+/* メインコンテンツ */
+
+.common-margin {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.common-margin {
+    margin-top: 60px;
+}
+
+section {
+    margin-top: 60px;
+}
+
+/* ニュースバー */
+
+.news-bar {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    border: 1px solid #eee;
+    background-color: #f6f6f6;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.news-bar a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #333;
+    line-height: 40px;
+}
+
+.previous {
+    padding-left: 20px;
+}
+
+.next {
+    padding-right: 20px;
+}
+
+/* メインコンテンツ共通 */
+
+section h2 {
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+/* 新着・売れ筋商品共通 */
+.common > ul {
+    display: flex;
+    justify-content: center;
+    margin: 12px 0 20px;
+}
+
+.common > ul > li > a {
+    font-size: 1.6rem;
+    color: #999;
+}
+
+.common > ul > li:nth-of-type(1) a {
+    color: #333;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.common > ul > li {
+    margin-right: 12px;
+    padding-right: 12px;
+    position: relative;
+}
+
+.common > ul > li:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 14px;
+    background: #ddd;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+.common > ul > li:nth-of-type(3):after {
+    display: none;
+}
+
+/* 新着商品 */
+
+.common-pagination {
+    position: relative;
+}
+
+.common-pagination > p {
+    position: absolute;
+    top: 52px;
+    right: 0;
+    font-size: 1.4rem;
+}
+
+.common-pagination p > a {
+    color: #333;
+    position: relative;
+    padding-right: 10px;
+}
+
+.common-pagination p > a:after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border: 0;
+    border-top: solid 2px #333;
+    border-right: solid 2px #333;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -2px;
+    transform: rotate(45deg);
+}
+
+/* 商品一覧共通 */
+
+.common-category ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.common-category li {
+    position: relative;
+    width: 15%;
+    height:270px;
+    display: block;
+    overflow: hidden;
+}
+
+.common-category img {
+    position: absolute;
+    width: 100%;
+    display: block;
+    transition: .4s ease-in-out;
+}
+
+.common-category img:nth-of-type(1) {
+    z-index: 99;
+}
+
+.common-category li:hover img:nth-of-type(1) {
+    opacity: 0;
+}
+
+.common-category p {
+    color: #333;
+    text-align: center;
+}
+
+.common-category p:nth-of-type(1) {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    font-size: 1.4rem;
+}
+
+.common-category span {
+    font-size: 2.0rem;
+    font-weight: 600;
+}
+
+/* おすすめ商品 */
+
+.recommend-item {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    background-color: #f6f6f6;
+}
+
+.recommend-item ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1180px;
+    margin: 35px auto 0
+}
+
+.recommend-item img {
+    width: 380px;
+    vertical-align: top;
+}
+
+.reccomend-detail {
+    background-color: #fff;
+    color: #333;
+    padding: 15px 0 35px 20px;
+}
+
+.reccomend-detail h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.reccomend-detail p {
+    color: #666;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+/* クーポンバナー */
+
+.banner-coupon {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.banner-coupon img {
+    width: 100%;
+    max-width: 1180px;
+}
+
+/* 売れ筋アイテム */
+
+.popular-item-category ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.popular-item-category li {
+    width: 20%;
+    height: 320px;
+}
+
+.popular-item-category p:nth-of-type(1) {
+    top: 250px;
+    padding: 0 18px;
+}
+
+/* 最近チェックした商品 */
+
+.recently-checked {
+    background-color: #f6f6f6;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.recently-checked-category ul {
+    max-width: 1180px;
+    margin: 35px auto 0;
+}
+
+.recently-checked-category li {
+    width: 33%;
+    height: 180px;
+    background-color: #fff;
+    position: relative;
+}
+
+.recently-checked-category img {
+    width: 152px;
+    height: 152px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    margin-left: 10px;
+}
+
+.recently-checked-category p:nth-of-type(1) {
+    top: 60px;
+    right: 20px;
+    left: auto;
+    width: 180px;
+    text-align: left;
+}
+
+/* 今週のピックアップ */
+
+.weekly-pickup h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 5px 0 20px;
+}
+
+.weekly-item-category ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.weekly-item-category li {
+    width: 16%;
+    height: 210px;
+}
+
+/* キャラクターバナー */
+
+.character-banner ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.character-banner img {
+    width: 388px;
+    margin-top: 20px;
+}
+
+.character-banner h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #666;
+    margin-top: 15px;
+}
+
+.character-banner p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 公式アカウント */
+
+.sns-account {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin-bottom: 30px;
+}
+
+.sns-account h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 5px 0 20px;
+}
+
+.sns-account ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sns-account li {
+    width: 49%;
+}
+
+.sns-account img {
+    width: 100%;
+}
+
+.sns-account p {
+    display: none;
+}
