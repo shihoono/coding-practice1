@@ -330,3 +330,34 @@ nav a {
     100% { opacity: 0 }
 }
 
+/*　メイン画像 */
+
+.top-image img {
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color, var(--swiper-theme-color));
+    width: 50px; /* ボタンの幅 */
+    height: 50px; /* ボタンの高さ */
+    background-size: 50px 50px; /* 背景画像としてのサイズ（＝表示したい画像サイズ） */
+    margin-top: -24px; /* 縦中央配置用：ボタンの高さの半分のネガティブマージン（top:50%がすでに設定されている） */
+}
+
+.swiper-button-prev {
+    background-image: url(image/pagination-prev.png);
+    margin-left: 20px;
+}
+
+.swiper-button-next {
+    background-image: url(image/pagination-next.png);
+    margin-right: 20px;
+}
