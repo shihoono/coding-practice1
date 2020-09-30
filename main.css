@@ -782,3 +782,94 @@ footer ul {
     opacity: 0.4;
     text-align: right;
 }
+
+/* tablet */
+
+@media screen and (max-width: 1024px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .banner img.img-pc {
+        width: 100%;
+        height: 30px;
+    }
+
+    section {
+        margin-top: 0;
+    }
+
+    .common-margin {
+        margin-top: 30px;
+    }
+
+    .common-category p:nth-of-type(1) {
+        top: 140px;
+        font-size: 1.2rem;
+    }
+
+    .recommend-item img {
+        width: 100%;
+    }
+
+    .recommend-item li:not(:first-of-type) {
+        padding-left: 2%;
+    }
+
+    .reccomend-detail {
+        padding-left: 10px;
+    }
+
+    .reccomend-detail h3 {
+        font-size: 1.4rem;
+    }
+
+    .reccomend-detail p {
+        font-size: 1.2rem;
+    }
+
+    .popular-item-category li {
+        height: 250px;
+    }
+
+    .popular-item-category p:nth-of-type(1) {
+        top: 160px;
+    }
+
+    .recently-checked-category li {
+        height: 130px;
+    }
+
+    .recently-checked-category img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .recently-checked-category p:nth-of-type(1) {
+        top: 40px;
+        width: 100px;
+        font-size: 1.2rem;
+    }
+
+    .common-category span {
+        font-size: 1.8rem;
+    }
+
+    .recently-checked {
+        padding-top: 30px;
+    }
+
+    .weekly-item-category li {
+        height: 150px;
+    }
+
+    .character-banner img {
+        width: 240px;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+
+}
