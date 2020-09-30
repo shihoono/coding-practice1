@@ -711,3 +711,74 @@ section h2 {
 .sns-account p {
     display: none;
 }
+
+/* フッター */
+
+footer {
+    background-color: #3d485e;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    row-gap: 30px;
+    padding: 25px 10%;
+    font-size: 1.2rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.footer-nav ul {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+}
+
+.footer-nav li {
+    margin-right: 8px;
+    padding-right: 8px;
+    border-right: 1px solid hsla(0,0%,100%,.1);
+    line-height: 12px;
+}
+
+.footer-nav a {
+    color: #fff;
+    opacity: 0.4;
+    text-decoration: none;
+}
+
+.sns {
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    color: #fff;
+    opacity: 0.4;
+}
+
+.sns-linefriends img, .sns-bt21 img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.sns-linefriends, .sns-bt21 {
+    display: flex;
+}
+
+.sns ul {
+    display: flex;
+    line-height: 24px;
+    margin-right: 48px;
+}
+
+.sns p {
+    margin-right: 16px;
+}
+
+.company-name {
+    grid-row: 1/2;
+    grid-column: 2;
+    color: #fff;
+    opacity: 0.4;
+    text-align: right;
+}
