@@ -873,3 +873,331 @@ footer ul {
     }
 
 }
+
+@media screen and (max-width: 480px) {
+
+    html {
+        font-size: 62.5%;
+    }
+
+    /* sp用画像オン */
+
+    img.img-pc {
+        display: none;
+    }
+
+    img.img-sp {
+        display: block;
+        width: 100%;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .sub-menu {
+        display: none;
+    }
+
+    form {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /* バナー */
+
+    .banner li {
+        height: 100%;
+    }
+
+    /* ヘッダー順番変更 */
+
+    .for-sp {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* ヘッダー */
+    .logo-area {
+        height: 60px;
+    }
+
+    .humberger-menu {
+        display: block;
+    }
+
+    .humberger-menu i {
+        font-size: 2.0rem;
+        color: #333;
+        padding-left: 10%;
+        line-height: 60px;
+    }
+
+    .search-icon {
+        display: block;
+    }
+
+    .heart {
+        display: none;
+    }
+
+    .cart span {
+        left: 10px;
+    }
+
+    .search-icon i {
+        font-size: 2.0rem;
+        color: #333;
+    }
+
+    .cart, .search-icon {
+        margin: 2px 10px 0 5px;
+    }
+
+    .shop-guide {
+        justify-content: center;
+    }
+
+    /* トップ画像 */
+    
+    .swiper-button-prev, .swiper-button-next {
+        display: none;
+    }
+
+    /* ニュース */
+
+    .previous, .next {
+        display: none;
+    }
+
+    .news-bar {
+        background-color: rgba(0,214,100,.1);
+        border: none;
+        padding: 10px 25px;
+        height: 60px;
+        text-align: left;
+    }
+
+    .news-bar a {
+        line-height: 1.4em;
+        font-weight: 400;
+    }
+
+    /* メイン共通 */
+
+    .common-margin {
+        margin-top: 20px;
+    }
+
+    .common > ul > li:after {
+        display: none;
+    }
+
+    section {
+        padding: 0 2rem;
+    }
+
+    section h2 {
+        font-size: 2.2rem;
+    }
+
+    /* 新着商品 */
+    .common > ul > li {
+        margin-right: 0;
+    }
+
+    .common-category ul {
+        flex-flow: wrap;
+    }
+
+    .common-category li {
+        width: 50%;
+    }
+
+    .common-category p:nth-of-type(1) {
+        top: 200px;
+    }
+
+    .new-items {
+        padding-bottom: 80px;
+        position: relative;
+    }
+
+    .common-pagination > p {
+        bottom: 50px;
+        top: auto;
+        right: 50%;
+        border: solid 1px #ddd;
+        padding: 10px 50px;
+        transform: translate(50%,50%);
+        width: 300px;
+        text-align: center;
+    }
+
+    .common-pagination p > a {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    /* おすすめ商品 */
+
+    .recommend-item ul {
+        flex-flow: wrap;
+        margin-top: 20px;
+    }
+    
+    .recommend-item li {
+        margin-bottom: 30px;
+    }
+
+    .reccomend-detail h3 {
+        font-size: 1.6rem;
+    }
+
+    .reccomend-detail p {
+        font-size: 1.4rem;
+    }
+
+    .recommend-item {
+        padding-bottom: 10px;
+    }
+
+    /* クーポンバナー */
+
+    .banner-coupon {
+        margin-top: 20px;
+    }
+
+    /* 売れ筋 */
+
+    .popular-item-category li {
+        height: 280px;
+    }
+
+    .recently-checked-category li:not(:first-of-type) {
+        display: none;
+    }
+
+    .recently-checked-category li {
+        height: 280px;
+    }
+
+    /*  最近チェックした商品 */
+
+    .recently-checked-category img {
+        position: absolute;
+        width: 100%;
+        display: block;
+        width: 152px;
+        height: 152px;
+        top: 0;
+        transform: translate(0);
+    }
+
+    .recently-checked-category p:nth-of-type(1) {
+        width: 120px;
+        text-align: center;
+    }
+
+    /* 今週のピックアップ */
+    
+    .weekly-item-category li {
+        width: 33%;
+    }
+
+    .weekly-item-category {
+        padding-bottom: 80px;
+    }
+
+    /* キャラクターバナー */
+
+    .character-banner ul {
+        flex-wrap: wrap;
+    }
+
+    .character-banner img {
+        width: 100%;
+    }
+
+    .character-banner {
+        background-color: #f6f6f6;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    .character-banner h3 {
+        margin-top: 0;
+        background-color: #fff;
+        text-align: left;
+        padding: 15px 20px 5px 20px;
+    }
+
+    .character-banner p {
+        background-color: #fff;
+        text-align: left;
+        padding: 0 20px 20px 20px;
+    }
+
+    .character-banner img {
+        vertical-align: top;
+    }
+
+    /* 公式アカウント */
+    .sns-account {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .sns-account p {
+        display: block;
+        text-align: center;
+        font-size: 1.6rem;
+        padding-top: 1.2rem;
+    }
+
+    /* フッター */
+
+    footer {
+        display: block;
+    }
+    
+    .footer-nav {
+        padding-right: 50px;
+    }
+
+    .footer-nav ul {
+        flex-wrap: wrap;
+    }
+    
+    .footer-nav li {
+        margin-bottom: 0.8rem;
+    }
+
+    .footer-nav a {
+        line-height: 2.0rem;
+        font-weight: 400;
+    }
+
+    .sns-linefriends, .sns-bt21 {
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    .sns-linefriends img, .sns-bt21 img {
+        margin: 5px 15px 20px 0;
+    }
+
+    .company-name {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        text-align: right;
+        padding-top: 15px;
+        border-top: solid 1px #666;
+    }
+
+}
